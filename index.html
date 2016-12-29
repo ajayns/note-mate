@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="noteMate">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>NoteMate</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <script data-require="jquery@*" data-semver="3.0.0" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.js"></script>
+    <link data-require="bootstrap@*" data-semver="4.0.0-alpha.2" rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css" />
+    <script data-require="bootstrap@*" data-semver="4.0.0-alpha.2" src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
+    <script>
+    document.write('<base href="' + document.location + '" />');
+  </script>
+    <link rel="stylesheet" href="style.css" />
+    <script data-require="angular.js@1.5.x" src="https://code.angularjs.org/1.5.8/angular.js" data-semver="1.5.8"></script>
+    <script data-require="angular-route@*" data-semver="1.5.8" src="https://code.angularjs.org/1.5.8/angular-route.js"></script>
+    <script src="app.js"></script>
+  </head>
+
+  <body ng-controller="MainCtrl">
+    
+    <nav class="navbar navbar-dark bg-primary">
+      <h1 class="navbar-brand mb-0">
+        <i class="material-icons">assignment</i>
+        NoteMate
+      </h1>
+      
+      <form class="form-inline right">
+        <input class="form-control search-bar " ng-model="searchTerm" type="text" placeholder="Search" />
+      </form>
+    </nav>
+    
+    <br />
+    
+    <div ng-view=""></div>
+  </body>
+
+</html>

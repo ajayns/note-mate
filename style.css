@@ -1,0 +1,40 @@
+
+.menu {
+  margin: 15px;
+}
+
+.new-note-form {
+  padding: 10px;
+}
+
+.card-footer {
+  transition: all linear 0.5s;
+}
+
+.search-bar {
+  width: 150px;
+  transition: all ease 0.3s;
+}
+
+.search-bar:hover {
+  width: 200px;
+}
+
+.new-btn {
+  position: fixed;
+  bottom: 4vh;
+  width: 100%;
+}
+
+.new-btn>.btn {
+  display: table;
+  margin: 0 auto;
+}
+
+.white-space {
+  height: 150px;
+}
+
+.right {
+  float: right !important;
+}

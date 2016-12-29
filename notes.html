@@ -1,0 +1,23 @@
+<div class="container">
+  <div ng-repeat="x in notes | filter: searchTerm"  class="col-sm-12 col-md-6 col-lg-4" ng-click="mouse=!mouse">
+    <div class="card">
+      <div class="card-block">
+        <h4 class="card-title">{{x.title}}</h4>
+        <div class="card-text">{{x.desc}}</div>
+        <br/>
+      </div>
+      <div ng-hide="!mouse" class="card-footer text-xs-right">
+        <a href="#edit" ng-click="edit($index)" class="card-link"><i class="material-icons">edit</i></a>
+        <a href="#notes" ng-click="del($index)" class="card-link"><i class="material-icons">delete</i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="white-space"></div>
+
+<div class="new-btn">
+    <a class="btn btn-primary" href="#new">
+      <i class="material-icons">add</i>
+    </a>
+</div>

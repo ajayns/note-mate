@@ -1,0 +1,23 @@
+<div class="container">
+<div class="col-sm-12">
+  <div class="card">
+    <h4 class="card-header">New Note</h4>
+    <div class="card-block">
+      <form>
+        <div class="form-group">
+          <label for="title">Title</label>
+          <input class="form-control" id="new_note_title" type="text" ng-model="tempNote.title" required/>
+        </div>
+        <div class="form-group">
+          <label for="descrip">Description</label>
+          <textarea class="form-control" id="new_note_desc" type="text" ng-model="tempNote.desc" rows="4"></textarea>
+        </div>
+      </form>
+      <div class="text-xs-right">
+        <a href="#notes" class="btn btn-secondary">Back</a>
+        <a href="#notes" ng-click="saveEdit()" class="text-xs-right btn btn-primary">Save Changes</a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
